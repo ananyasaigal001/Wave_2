@@ -2,7 +2,7 @@
 number=input("Enter a number: ")
 number=int(number)
 
-#determine if number is even or odd
+#determine if the number is even or odd
 if number%2==0:
     print("Number is even")
 else:
