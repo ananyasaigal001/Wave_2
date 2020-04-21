@@ -4,7 +4,13 @@ column=str(position[0])
 row=int(position[1])
 
 #determine the colour
-if column== ("a" or "c" or "e" or "g") and (row%2!=0) :
-    print("black")
+if column== "a" or column=="c" or column=="e" or column=="g" :
+    if row%2==0:
+        print("white")
+    else:
+        print("black")
 else:
-    print("white")
+    if row%2==0:
+        print("black")
+    else:
+        print("white")
