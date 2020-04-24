@@ -1,0 +1,42 @@
+from random import randint
+for _ in range(1):
+	value = randint(0, 38)
+
+#Display the spin results and Pay number	
+if value==37:
+    print("The spin resulted in 00...")
+    print("Pay 00")
+
+else:
+    print("The spin resulted in",value,"...")
+    print("Pay",value)
+
+#Display colour(red vs. black)    
+if (value%2!=0 and value<=9 and value>0) or (value%2==0 and value<=18 and value>=12) or (value%2!=0 and value<28 and value>18) or (value%2==0 and value<=36 and value>=30):
+    print("Pay Red")
+
+elif value==0 or value==37:
+    pass
+
+else:
+    print("Pay Black")
+
+#Display even or odd    
+if value>=1 and value%2==0:
+    print("Pay Even")
+
+elif value==0 or value==37:
+    pass
+
+else:
+    print("Pay Odd")
+
+#Display the range of the number(1 to 18 vs 19 to 36)
+if value>=1 and value<=18:
+    print("Pay 1 to 18")
+
+elif value==0 or value==37:
+    pass
+
+else:
+    print("Pay 19 to 36")
