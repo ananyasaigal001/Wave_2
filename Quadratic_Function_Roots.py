@@ -7,11 +7,12 @@ c = int(input("Enter the c value: "))
 
 #determine the discriminant
 discriminant=((b**2)-4*a*c)
+root_discriminant=math.sqrt(discriminant)
 
 #determine the roots
 if discriminant>0:
-    root_one=(-b+math.root(dicriminant))/(2*a)
-    root_two=(-b-math.root(dicriminant))/(2*a)
+    root_one=(-b+root_discriminant)/(2*a)
+    root_two=(-b-root_discriminant)/(2*a) 
     print("There are two real roots:",root_one,"and",root_two)
 elif discriminant==0:
     root=(-b)/(2*a)
